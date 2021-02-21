@@ -20,27 +20,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-// Custom variables and variable overwrites.
-$global-link-color: #da7d02;
-$offcanvas-bar-background: #fff;
-$offcanvas-bar-color-mode: none;
-
-// Import default variables and available mixins.
-@import "~uikit/src/scss/variables-theme.scss";
-@import "~uikit/src/scss/mixins-theme.scss";
-
-// Import UIkit.
-@import "~uikit/src/scss/uikit-theme.scss";
-
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
-
-.uk-input,
-.uk-select,
-.uk-textarea {
-  border-radius: 6px;
-}
+@import "assets/scss/main";
 </style>
