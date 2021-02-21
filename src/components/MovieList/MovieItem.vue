@@ -43,6 +43,7 @@ $border-radius: 5px;
   min-width: 100%;
   border-radius: $border-radius;
   position: relative;
+  background-color: white;
 
   .favorite-movie {
     position: absolute;
@@ -53,6 +54,7 @@ $border-radius: 5px;
   }
 
   img {
+    min-height: 300px;
     width: 100%;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;

@@ -30,9 +30,14 @@
         <p class="uk-margin-remove">Total:</p>
         <strong>R$ 19,98</strong>
       </div>
-      <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-top">
-        Finalizar Compra
-      </button>
+      <router-link to="/checkout">
+        <button
+          class="uk-button uk-button-primary uk-width-1-1 uk-margin-top"
+          @click="hideCart"
+        >
+          Finalizar Compra
+        </button>
+      </router-link>
     </footer>
   </div>
 </template>
@@ -40,12 +45,17 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { ref } from "vue";
+import UIkit from "uikit";
 
 export default defineComponent({
   setup() {
     const cartList = ref(["Filme 1", "Filme 2", "Filme 3"]);
+    const hideCart = () => {
+      UIkit.offcanvas("#offcanvas-cart").hide();
+    };
     return {
-      cartList
+      cartList,
+      hideCart
     };
   }
 });

@@ -1,8 +1,12 @@
 <template>
-  <header>
-    <nav class="uk-navbar-container" uk-navbar>
+  <header
+    uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"
+  >
+    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
       <div class="uk-navbar-left">
-        <a class="uk-navbar-item uk-logo" href="#">LOGO</a>
+        <router-link class="uk-navbar-item uk-logo" to="/">
+          LOGO
+        </router-link>
       </div>
       <div class="uk-navbar-center">
         <div class="uk-navbar-item">
@@ -42,7 +46,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Cart from "@/components/Cart.vue";
+import Cart from "@/components/Cart/Cart.vue";
 export default defineComponent({
   name: "Header",
   components: {
@@ -62,6 +66,10 @@ export default defineComponent({
 .uk-navbar-nav > li > a,
 .uk-navbar-item,
 .uk-navbar-toggle {
-  min-height: 70px;
+  min-height: 60px;
+}
+.uk-navbar-container {
+  border-bottom: 1px solid #e6e6e6;
+  background: #fff;
 }
 </style>

@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import MovieList from "@/components/MovieList.vue";
+import MovieList from "@/components/MovieList/MovieList.vue";
 
 export default defineComponent({
   name: "Home",

@@ -3,3 +3,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #EDF1F5;
+}

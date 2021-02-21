@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import MovieItem from "@/components/MovieItem.vue";
+import MovieItem from "@/components/MovieList/MovieItem.vue";
 export default defineComponent({
   name: "MovieList",
   components: { MovieItem },
