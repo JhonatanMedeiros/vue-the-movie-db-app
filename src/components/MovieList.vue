@@ -1,15 +1,14 @@
 <template>
-  <div id="home">
-    <MovieList />
+  <div>
+    Movie List
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import MovieList from "@/components/MovieList.vue";
-
 export default defineComponent({
-  name: "Home",
-  components: { MovieList }
+  name: "MovieList"
 });
 </script>
+
+<style scoped lang="scss"></style>
