@@ -12,7 +12,7 @@
 import { Options, Vue } from "vue-class-component";
 
 @Options({})
-export default class Home extends Vue {}
+export default class Footer extends Vue {}
 </script>
 
 <style scoped></style>

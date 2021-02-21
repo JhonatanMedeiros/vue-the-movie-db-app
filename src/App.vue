@@ -18,6 +18,8 @@ export default {
 <style lang="scss">
 // Custom variables and variable overwrites.
 $global-link-color: #da7d02;
+$offcanvas-bar-background: #fff;
+$offcanvas-bar-color-mode: none;
 
 // Import default variables and available mixins.
 @import "~uikit/src/scss/variables-theme.scss";
