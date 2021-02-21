@@ -1,6 +1,8 @@
 <template>
   <Header />
-  <router-view />
+  <div class="uk-container">
+    <router-view />
+  </div>
   <Footer />
 </template>
 
@@ -34,5 +36,11 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+
+.uk-input,
+.uk-select,
+.uk-textarea {
+  border-radius: 6px;
 }
 </style>
